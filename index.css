@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&family=Bebas+Neue&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*----------------------------------------------------------------*/
+body{
+    background-image: url('Assets/pexels-j-lee-copy.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+header{
+    height: 100vh;
+    background: url('Assets/ben-kolde-cpLsWmMEa1Q-unsplash.jpg') no-repeat fixed;
+    background-size: cover;
+}
+#nav_bar{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    padding: 25px 0px 10px 0px;
+}
+#nav_bar h1{
+    font-family: 'Bebas Neue', Arial, cursive;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+}
+#nav_bar ul{
+    display: flex;
+    list-style: none;
+}
+#nav_bar ul li a{
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    margin-left: 45px;
+    display: inline-block;
+}
+#nav_bar ul li a:hover{
+    color: rgb(177, 134, 99);
+    transform: scale(105%);
+}
+/* ----------------------------------------------------*/
+#main{
+    width: 85%;
+    margin: auto;
+    height: 90%;
+    padding: 10% 0;
+  
+}
+#main #intro h2{
+    font-family: 'Bebas Neue', Arial, cursive;
+    letter-spacing: 0.55rem;
+    font-size: 4.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+#main #intro p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+#intro button{
+    font-family: 'Bebas Neue', Arial, cursive;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.25rem;
+    letter-spacing: 0.3rem;
+    margin-top: 5rem;
+    padding: 0.5em 1.2em;
+    position: absolute;
+    top: 70%;
+}
+/* ----------------------------------------------------*/
+#side_scroll{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.2rem;
+    position: fixed;
+    left: 0;
+    top: 46%;
+    transform: rotate(90deg);
+}
+#about_me{
+    display: flex;
+    width: 85%;
+    margin: 100px auto 100px auto;
+    position: relative;
+}
+.grid_2{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.grid_2 img{
+    width: 100%;
+}
+#what_i_do h2{
+    font-family: 'Bebas Neue', Arial, cursive;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    padding-left: 45px;
+    margin: 10px 130px 20px 0px;
+}
+#what_i_do p{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    padding-left: 45px;
+    margin-right: 130px;
+    text-align: justify;
+}
+.header_right{
+    font-family: 'Bebas Neue', Arial, cursive;
+    font-size: 3.5rem;
+    letter-spacing: 2rem;
+    position: absolute;
+    right: -11.5%;
+    top: 35%;
+    transform: rotate(90deg);
+}
+#work{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 85%;
+    margin: 150px auto 150px auto;
+}
+.header_left{
+    font-family: 'Bebas Neue', Arial, cursive;
+    font-size: 3.5rem;
+    letter-spacing: 2rem;
+}
+.container{
+    width: 100%
+}
+.container .work_box{
+    margin-bottom: 20px;
+}
+.work_box img{
+    width: 100%;
+}
+#banner{
+    width: 100%;
+    margin: 40px auto 40px auto;
+    height: 60vh;
+    background: url('Assets/pexels-j-lee-70.jpg') no-repeat fixed;
+    background-size: cover;
+}
+.cta{
+    width: 85%;
+    margin: auto;
+}
+.cta h2{
+    font-family: 'Bebas Neue', Arial, cursive;
+    letter-spacing: 1rem;
+}
+#contact{
+    position: relative;
+    width: 85%;
+    margin: 130px auto 130px auto;
+}
+#contact h2{
+    font-family: 'Bebas Neue', Arial, cursive;
+    letter-spacing: 2rem;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 50%;
+    left: -11.5%;
+    transform: rotate(90deg);
+}
+.grid_2_half{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 65px;
+    width: 95%;
+}
+.grid_2_half img{
+    width: 100%;
+}
+.align_center{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
+}
+.align_center h3{
+    font-family: 'Bebas Neue', Arial, cursive;
+    font-size: 2rem;
+}
+.grid_2_half input, textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 0.6em 0.8em;
+    margin-top: 12px;
+    border: none;
+    background-color: #000;
+    opacity: 90%;
+    color: #fff;
+    resize: none;
+}
+#send{
+    width: initial;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#footer{
+    color: #fff;
+    background-color: #000;
+    font-family: 'Bebas Neue', Arial, cursive;
+    text-align: right;
+    padding: 20px 0px 20px 0px;
+}
+#footer h1{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: flex-end;
+    letter-spacing: 0.3rem;
+}
