@@ -146,22 +146,47 @@ header{
 #banner{
     width: 100%;
     margin: 40px auto 40px auto;
-    height: 60vh;
-    background: url('Assets/pexels-j-lee-70.jpg') no-repeat fixed;
+    background: url('Assets/pexels-j-lee-copy.jpg') no-repeat;
     background-size: cover;
 }
 .cta{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-gap: 20px;
     width: 85%;
     margin: auto;
+    padding: 20px 0px;
 }
 .cta h2{
     font-family: 'Bebas Neue', Arial, cursive;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
+    font-size: 3.5rem;
+}
+.block {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.block span{
+    font-size: 3.25rem;
+    margin-bottom: 1.25rem;
+}
+.pargraph{
+    font-size: 1.25rem;
+    text-align: justify;
+    line-height: 1.4rem;
+    margin-bottom: 20px;
+}
+.image img{
+    width: 95%;
 }
 #contact{
     position: relative;
     width: 85%;
-    margin: 130px auto 130px auto;
+    margin: 150px auto 150px auto;
 }
 #contact h2{
     font-family: 'Bebas Neue', Arial, cursive;
@@ -220,4 +245,54 @@ header{
     margin: auto;
     justify-content: flex-end;
     letter-spacing: 0.3rem;
+}
+@media (min-width: 1540px) and (max-width: 1919px) {
+    .cta_info{
+        position: relative;
+    }
+    .cta_flex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 15%;
+    }
+    .card{
+        margin-bottom: 75px;
+    }
+    .block{
+        text-align: center;
+    }
+    .pargraph{
+        display: none;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1539px) {
+    #what_i_do p{
+        font-size: 1.15rem;
+        line-height: 1.75rem;
+        padding-left: 45px;
+        margin-right: 130px;
+        text-align: justify;
+    }
+    .cta_info{
+        display: flex;
+        position: relative;
+    }
+    .cta_flex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        transform: translateY(25%);
+    }
+    .card{
+        margin-bottom: 75px;
+    }
+    .block{
+        text-align: center;
+        font-size: 1.15rem;
+    }
+    .block span{
+        font-size: 2.5rem;
+    }
+    .pargraph{
+        display: none;
+    }
 }
